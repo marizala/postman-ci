@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "d142cb93-7f90-46e4-8d84-87241632d2e3",
+		"name": "FakeRESTApi.Web v1",
+		"description": "# FakeRESTApi.Web v1\n\nThis collection uses a fake REST API service from Azure\n\nFor more info, visit [https://fakerestapi.azurewebsites.net/index.html](https://fakerestapi.azurewebsites.net/index.html).\n\n### Authorization\n\nThis collection requires no authentication or authorization.\n\n### Environment Variables\n\nThis collection requires an environment variable named `fakeRESTApi.Web V1` that stores the `baseUrl`. You can set this variable in the Postman environment settings.\n\n### Pre-Request Scripts\n\n### Requests\n\n### Responses\n\n### Tests\n\nThis collection includes tests that validate the response status code and response body for each request.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Activities",
+			"item": [
+				{
+					"name": "Get list",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eca7f338-f3ef-42c2-b1bd-dd278b767489",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Schema is valid\", function () {\r",
+									"    pm.response.to.have.jsonSchema(pm.collectionVariables.get(\"schema_activities\"));\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "551572f3-05f1-4292-8457-e53045463fea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/Activities"
+					},
+					"response": [
+						{
+							"id": "7ba53f71-81fd-47c6-b400-df86f5e23a50",
+							"name": "Get list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/v1/Activities"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; v=1.0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 06:17:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Activity 1\",\n        \"dueDate\": \"2023-05-02T07:17:12.8615464+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Activity 2\",\n        \"dueDate\": \"2023-05-02T08:17:12.8615486+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Activity 3\",\n        \"dueDate\": \"2023-05-02T09:17:12.8615489+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Activity 4\",\n        \"dueDate\": \"2023-05-02T10:17:12.8615492+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Activity 5\",\n        \"dueDate\": \"2023-05-02T11:17:12.8615495+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Activity 6\",\n        \"dueDate\": \"2023-05-02T12:17:12.8615501+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Activity 7\",\n        \"dueDate\": \"2023-05-02T13:17:12.8615503+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Activity 8\",\n        \"dueDate\": \"2023-05-02T14:17:12.8615506+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Activity 9\",\n        \"dueDate\": \"2023-05-02T15:17:12.8615509+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Activity 10\",\n        \"dueDate\": \"2023-05-02T16:17:12.8615514+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Activity 11\",\n        \"dueDate\": \"2023-05-02T17:17:12.8615518+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Activity 12\",\n        \"dueDate\": \"2023-05-02T18:17:12.861552+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 13,\n        \"title\": \"Activity 13\",\n        \"dueDate\": \"2023-05-02T19:17:12.8615523+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 14,\n        \"title\": \"Activity 14\",\n        \"dueDate\": \"2023-05-02T20:17:12.8615526+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 15,\n        \"title\": \"Activity 15\",\n        \"dueDate\": \"2023-05-02T21:17:12.8615529+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 16,\n        \"title\": \"Activity 16\",\n        \"dueDate\": \"2023-05-02T22:17:12.8615531+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 17,\n        \"title\": \"Activity 17\",\n        \"dueDate\": \"2023-05-02T23:17:12.8615534+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 18,\n        \"title\": \"Activity 18\",\n        \"dueDate\": \"2023-05-03T00:17:12.8615538+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 19,\n        \"title\": \"Activity 19\",\n        \"dueDate\": \"2023-05-03T01:17:12.861554+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Activity 20\",\n        \"dueDate\": \"2023-05-03T02:17:12.8615543+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 21,\n        \"title\": \"Activity 21\",\n        \"dueDate\": \"2023-05-03T03:17:12.8615545+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 22,\n        \"title\": \"Activity 22\",\n        \"dueDate\": \"2023-05-03T04:17:12.8615548+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 23,\n        \"title\": \"Activity 23\",\n        \"dueDate\": \"2023-05-03T05:17:12.8615551+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 24,\n        \"title\": \"Activity 24\",\n        \"dueDate\": \"2023-05-03T06:17:12.8615553+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 25,\n        \"title\": \"Activity 25\",\n        \"dueDate\": \"2023-05-03T07:17:12.8615556+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 26,\n        \"title\": \"Activity 26\",\n        \"dueDate\": \"2023-05-03T08:17:12.8615559+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 27,\n        \"title\": \"Activity 27\",\n        \"dueDate\": \"2023-05-03T09:17:12.8615562+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 28,\n        \"title\": \"Activity 28\",\n        \"dueDate\": \"2023-05-03T10:17:12.8615564+00:00\",\n        \"completed\": true\n    },\n    {\n        \"id\": 29,\n        \"title\": \"Activity 29\",\n        \"dueDate\": \"2023-05-03T11:17:12.8615567+00:00\",\n        \"completed\": false\n    },\n    {\n        \"id\": 30,\n        \"title\": \"Activity 30\",\n        \"dueDate\": \"2023-05-03T12:17:12.861557+00:00\",\n        \"completed\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add activity",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "aeb3d26a-d08c-478f-a882-f990255f1f35",
+								"exec": [
+									"// Set id\r",
+									"pm.collectionVariables.set(\"activity_ctr\", parseInt(pm.collectionVariables.get(\"activity_ctr\")) + 1)\r",
+									"\r",
+									"// Set dueDate (in UTC, plus 1 day)\r",
+									"const moment = require('moment');\r",
+									"pm.collectionVariables.set(\"date_time\", moment().utc().add(1, 'days').format(\"YYYY-MM-DDTHH:mm:ss.ssssZ\"));"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "a83d344e-d088-401b-ad3e-e5494b7c94b4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const requestBody = JSON.parse(pm.request.body.raw);\r",
+									"const responseJson = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify new activity data\", function () {\r",
+									"    pm.expect(responseJson.id, \"\\\"id\\\"\").to.eql(requestBody.id);\r",
+									"    pm.expect(responseJson.title, \"\\\"title\\\"\").to.eql(requestBody.title);\r",
+									"    pm.expect(responseJson.dueDate, \"\\\"dueDate\\\"\").to.eql(requestBody.dueDate);\r",
+									"    pm.expect(responseJson.completed, \"\\\"completed\\\"\").to.eql(requestBody.completed);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "b80c85be-e92b-4ec3-8d9d-65b6d11973c5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{activity_ctr}}, // Pre-req\r\n  \"title\": \"{{$randomVerb}}\", \r\n  \"dueDate\": \"{{date_time}}\", // Pre-req\r\n  \"completed\": {{$randomBoolean}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/Activities",
+						"description": "⚠️ Adding a new activity will not add it into the server."
+					},
+					"response": [
+						{
+							"id": "2a02af96-c56a-49f8-b8a4-f53607899b2f",
+							"name": "Add activity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": {{activity_ctr}}, // Pre-req\r\n  \"title\": \"{{$randomVerb}}\", \r\n  \"dueDate\": \"{{date_time}}\", // Pre-req\r\n  \"completed\": {{$randomBoolean}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/api/v1/Activities"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; v=1.0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 06:17:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 31,\n    \"title\": \"calculate\",\n    \"dueDate\": \"2023-05-03T06:17:47.4747+00:00\",\n    \"completed\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Update activity",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b060d334-1c16-444b-9be8-982dfcacde9b",
+								"exec": [
+									"// Set dueDate (in UTC, plus 1 day)\r",
+									"const moment = require('moment');\r",
+									"pm.collectionVariables.set(\"date_time\", moment().utc().add(1, 'days').format(\"YYYY-MM-DDTHH:mm:ss.ssssZ\"));"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e05dc833-6243-4be3-8fb4-0aed27d8203b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const requestBody = JSON.parse(pm.request.body.raw);\r",
+									"const responseJson = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify new activity data\", function () {\r",
+									"    pm.expect(responseJson.id, \"\\\"id\\\"\").to.eql(requestBody.id);\r",
+									"    pm.expect(responseJson.title, \"\\\"title\\\"\").to.eql(requestBody.title);\r",
+									"    pm.expect(responseJson.dueDate, \"\\\"dueDate\\\"\").to.eql(requestBody.dueDate);\r",
+									"    pm.expect(responseJson.completed, \"\\\"completed\\\"\").to.eql(requestBody.completed);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "b8740b28-b160-4d21-bdd6-9d5c89cb8336",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"title\": \"{{$randomVerb}}\", \r\n  \"dueDate\": \"{{date_time}}\", // Pre-req\r\n  \"completed\": {{$randomBoolean}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/Activities/2",
+						"description": "StartFragment\n\n⚠️ Updating an activity will not update it into the server.\n\nEndFragment"
+					},
+					"response": [
+						{
+							"id": "2253364d-197b-4b18-a85a-d8fe393ab037",
+							"name": "Update activity",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 2,\r\n  \"title\": \"{{$randomVerb}}\", \r\n  \"dueDate\": \"{{date_time}}\", // Pre-req\r\n  \"completed\": {{$randomBoolean}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/api/v1/Activities/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; v=1.0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 06:18:01 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 2,\n    \"title\": \"program\",\n    \"dueDate\": \"2023-05-03T06:18:03.0303+00:00\",\n    \"completed\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get activity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5482d01d-ebb6-4148-aa5a-6b863e2cbdb5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify retrieved activity data\", function () {\r",
+									"    var title = \"Activity \" + pm.collectionVariables.get(\"activity_id\");\r",
+									"\r",
+									"    pm.expect(String(jsonData.id), \"\\\"id\\\"\").to.eql(String(pm.collectionVariables.get(\"activity_id\")));\r",
+									"    pm.expect(jsonData.title,\"\\\"title\\\"\").to.eql(title);\r",
+									"    pm.expect(jsonData.dueDate).not.be.empty;\r",
+									"    pm.expect(jsonData.completed,\"\\\"completed\\\"\").to.be.a(\"boolean\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ee0210a-c547-4f61-8535-8577fc380ed7",
+								"exec": [
+									"pm.collectionVariables.set(\"activity_id\", _.random(1, 30));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "689610aa-8308-4c8b-bb84-d18982e386ec",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/Activities/{{activity_id}}"
+					},
+					"response": [
+						{
+							"id": "d836b194-6d30-452c-a50e-a0f672fc41b3",
+							"name": "Get activity",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/v1/Activities/{{activity_id}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; v=1.0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 06:18:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Activity 3\",\n    \"dueDate\": \"2023-05-02T09:18:13.477268+00:00\",\n    \"completed\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Get activity (Not found)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "73a5a953-27a8-4b06-99f1-e29e9dce80ac",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "58cd7706-1959-4980-bf71-2f5d287efb35",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/Activities/31"
+					},
+					"response": [
+						{
+							"id": "ad754abb-3686-4a13-bc4a-e049a64db97d",
+							"name": "Get activity (Not found)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/v1/Activities/31"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8; v=1.0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 06:18:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.4\",\n    \"title\": \"Not Found\",\n    \"status\": 404,\n    \"traceId\": \"00-1c63df5f05667845a3ed5f4738c5adf5-c6db0c5f83e21b49-00\"\n}"
+						}
+					]
+				}
+			],
+			"_postman_id": "77b750de-3284-4e05-a44d-1085a704be81",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "01a7456c-80eb-4c5e-a955-48430b046ccd",
+						"type": "text/javascript",
+						"exec": [
+							"// SCHEMA",
+							"const schema_activities = {",
+							"\t\"type\": \"array\",",
+							"\t\"items\":{",
+							"\t\t\"properties\": {",
+							"            \"id\": {\"type\": \"integer\"},",
+							"            \"title\": {\"type\": \"string\"},",
+							"            \"dueDate\": {\"type\": \"string\"},",
+							"            \"completed\": {\"type\": \"boolean\"}",
+							"        },",
+							"        \"required\": [",
+							"            \"id\",",
+							"            \"title\",",
+							"            \"dueDate\",",
+							"            \"completed\"",
+							"        ],",
+							"        \"additional_properties\": false",
+							"    }",
+							"};",
+							"pm.collectionVariables.set(\"schema_activities\", schema_activities);"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5d978677-a2d7-4431-930e-5d8c6b6483b5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d7997770-563f-453f-987a-f8b6dde6804d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ce1f2b37-5aee-4b85-bb70-827d78b88831",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "bdd8f3f6-71c4-4041-b45a-7d086018009b",
+			"key": "schema_activities",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "93bd9c56-13ab-491b-bac6-5514395b6e0f",
+			"key": "date_time",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "573e2a9e-2ba5-41db-98f5-9701c3716c11",
+			"key": "activity_ctr",
+			"value": "30",
+			"type": "string"
+		},
+		{
+			"id": "cdf56835-b7a7-4a3c-9e4e-a0ec6bca3fe3",
+			"key": "activity_id",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
