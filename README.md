@@ -11,6 +11,9 @@ Before you can run this project, you must have the following software installed 
 - Node.js
 - Newman
 
+## Postman Workspace
+For more details about the Postman workspace and its collections you may visit: <br /> https://www.postman.com/automation-playground 
+
 ## Installation
 1. Download and install [Node.js](https://nodejs.org/en/download/current).
 2. To install Newman, open the terminal and run this command `npm install -g newman`. 
