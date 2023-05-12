@@ -465,7 +465,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "dcfb94f1-fc30-4e76-8f82-82c7cc8cb299",
+						"id": "fbb1f837-87fe-453f-9645-6cf691dd2bb7",
 						"type": "text/javascript",
 						"exec": [
 							"// SCHEMA",
@@ -492,7 +492,7 @@
 							"// ",
 							"utils = {",
 							"    funcA: function doAct() {",
-							"",
+							"        console.log(\"doAct\")",
 							"    }",
 							"}"
 						]
@@ -501,7 +501,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "7590e099-fa51-4615-b3a0-b73640cf3f06",
+						"id": "ad3ca620-6403-4eec-9ce9-b21a8864ba97",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -535,23 +535,23 @@
 	],
 	"variable": [
 		{
-			"id": "e39baf02-3506-4756-8454-f8832bdf0f23",
+			"id": "49fb6ef3-faa2-4c39-a6b9-e18bc4ff693d",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "ddf9754e-edc0-4275-8fc4-662f594e9f7a",
+			"id": "a331128e-5553-4257-a9f5-d878f18a72c5",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "6e09088f-6ba6-4200-a119-1c9df23fe7cb",
+			"id": "d0d552ea-6c44-4627-832a-3682bdc5b5dd",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "f768fff8-09af-4cd9-958a-65b9e48e02de",
+			"id": "d6880782-828d-49ef-962b-bb5065492765",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
