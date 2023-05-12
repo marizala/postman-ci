@@ -466,7 +466,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0bfd222f-3dbc-4811-9339-041e663bf160",
+						"id": "db5b4d62-8d86-4654-a9f6-68f62ad10a30",
 						"type": "text/javascript",
 						"exec": [
 							"// SCHEMA",
@@ -490,7 +490,7 @@
 							"};",
 							"pm.collectionVariables.set(\"schema_activities\", schema_activities);",
 							"",
-							"// Reusable functions",
+							"// Resuable functions",
 							"utils = {",
 							"    funcA: function act() {",
 							"        return \"A\";",
@@ -506,7 +506,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "461debee-4cfc-4235-8f62-21a10fe221d7",
+						"id": "d4dc97fb-7515-4fdc-a700-f85f2a594777",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -540,23 +540,23 @@
 	],
 	"variable": [
 		{
-			"id": "4536299d-5d76-4f18-af63-940a45726a50",
+			"id": "736f8604-8827-4099-9533-a2a07caff086",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "0802e428-bcdc-4168-af0b-1ebcba6e9757",
+			"id": "44aadf6f-8c77-447d-ad41-2e51889421af",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "f8fb8fd3-19f8-443d-8f3d-2b5bf6c6332c",
+			"id": "eae380e1-4adf-4e2c-a08a-f55ca48343a3",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "905027d9-4c0a-451e-90d6-14ee59d9c365",
+			"id": "4f9496c4-7c1d-4b75-a954-2dc853fc8eba",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
