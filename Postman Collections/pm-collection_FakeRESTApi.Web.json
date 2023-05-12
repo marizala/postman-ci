@@ -38,7 +38,7 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									""
+									"utils.funcA();"
 								],
 								"type": "text/javascript"
 							}
@@ -535,23 +535,23 @@
 	],
 	"variable": [
 		{
-			"id": "49fb6ef3-faa2-4c39-a6b9-e18bc4ff693d",
+			"id": "cf5528a8-30f9-4af2-9b93-8667c25f75d7",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "a331128e-5553-4257-a9f5-d878f18a72c5",
+			"id": "1ce652dd-0c75-4e28-aabf-79d1604a4ca4",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "d0d552ea-6c44-4627-832a-3682bdc5b5dd",
+			"id": "8e9e43c4-3dc8-444f-a200-065f46c9640e",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "d6880782-828d-49ef-962b-bb5065492765",
+			"id": "88747d86-c58f-48ba-94d9-9673725cb693",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
