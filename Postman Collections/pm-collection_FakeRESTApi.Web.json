@@ -466,7 +466,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9c641338-47c9-4181-9559-198734af1ea9",
+						"id": "defc27ff-b288-4cb7-b891-55552fc7f7f3",
 						"type": "text/javascript",
 						"exec": [
 							"// SCHEMA",
@@ -491,7 +491,7 @@
 							"pm.collectionVariables.set(\"schema_activities\", schema_activities);",
 							"",
 							"utils = {",
-							"    funcA: function doAct() {",
+							"    funcA: function do() {",
 							"        return \"A\";",
 							"    },",
 							"",
@@ -505,7 +505,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d6551f9c-7e4e-4ab4-9509-6c73ead1be2a",
+						"id": "a1a8f5a7-372d-462f-a83a-2e88dc94b8a0",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -539,23 +539,23 @@
 	],
 	"variable": [
 		{
-			"id": "547846b1-591f-44f4-bee6-f5faab85a7e5",
+			"id": "311aa619-66b7-4094-9213-59df926ad06a",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "0ecc2cfd-a9e9-4886-a937-a49034b5b074",
+			"id": "47864a9b-3ff6-4977-98f9-5147db6a034c",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "1ac082d4-4138-4c40-b39c-daaeb3e31851",
+			"id": "0813dff4-cfd3-4951-a292-ea5aadee4b7c",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "1d47bd66-3a21-4e95-bd11-5bf164fa68f3",
+			"id": "f1dd13f2-d857-4899-b2f6-9976946ee45b",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
