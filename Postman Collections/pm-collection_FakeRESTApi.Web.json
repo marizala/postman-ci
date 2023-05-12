@@ -38,8 +38,8 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									"utils.funcB();\r",
-									"utils.funcA();"
+									"console.log(utils.funcB());\r",
+									"console.log(utils.funcA());"
 								],
 								"type": "text/javascript"
 							}
@@ -466,7 +466,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "08cfe317-763d-4e3f-93cc-1321c0162d08",
+						"id": "9c641338-47c9-4181-9559-198734af1ea9",
 						"type": "text/javascript",
 						"exec": [
 							"// SCHEMA",
@@ -490,14 +490,13 @@
 							"};",
 							"pm.collectionVariables.set(\"schema_activities\", schema_activities);",
 							"",
-							"// Global function",
 							"utils = {",
 							"    funcA: function doAct() {",
-							"        console.log(\"A\")",
+							"        return \"A\";",
 							"    },",
 							"",
 							"    funcB: function doAct() {",
-							"        console.log(\"B\")",
+							"        return \"B\";",
 							"    }",
 							"}"
 						]
@@ -506,7 +505,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "447e3705-6727-4355-8d8e-fa35635bef36",
+						"id": "d6551f9c-7e4e-4ab4-9509-6c73ead1be2a",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -540,23 +539,23 @@
 	],
 	"variable": [
 		{
-			"id": "53f927c3-3774-4cd7-8a01-2afb7d40a5e9",
+			"id": "bc7aab71-c8d7-4c9b-8866-41e18ad91842",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "42ca5f5d-8ee2-4276-b98a-7525bfb4949e",
+			"id": "db06f6c4-716b-42ee-9f41-0d0786e7b950",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "243a7e24-3a6d-40d4-8a02-2fa9169e6187",
+			"id": "c413cfb1-a3d4-4c82-9459-66156de6cfd3",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "27512c3d-a58f-476c-a90d-853c17f8126c",
+			"id": "f35d4c5c-838e-429d-8442-f47e39e6789a",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
