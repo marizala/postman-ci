@@ -38,8 +38,8 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									"utils.funcB();\r",
-									"utils.funcA();"
+									"console.log(utils.funcB());\r",
+									"console.log(utils.funcA());"
 								],
 								"type": "text/javascript"
 							}
@@ -466,7 +466,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "08cfe317-763d-4e3f-93cc-1321c0162d08",
+						"id": "0bfd222f-3dbc-4811-9339-041e663bf160",
 						"type": "text/javascript",
 						"exec": [
 							"// SCHEMA",
@@ -490,14 +490,14 @@
 							"};",
 							"pm.collectionVariables.set(\"schema_activities\", schema_activities);",
 							"",
-							"// Global function",
+							"// Reusable functions",
 							"utils = {",
-							"    funcA: function doAct() {",
-							"        console.log(\"A\")",
+							"    funcA: function act() {",
+							"        return \"A\";",
 							"    },",
 							"",
-							"    funcB: function doAct() {",
-							"        console.log(\"B\")",
+							"    funcB: function act() {",
+							"        return \"B\";",
 							"    }",
 							"}"
 						]
@@ -506,7 +506,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "447e3705-6727-4355-8d8e-fa35635bef36",
+						"id": "461debee-4cfc-4235-8f62-21a10fe221d7",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -540,23 +540,23 @@
 	],
 	"variable": [
 		{
-			"id": "9dcd0381-ab1e-4561-ad5b-067da71b42ec",
+			"id": "4536299d-5d76-4f18-af63-940a45726a50",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "b214e100-10b9-4d97-aa16-dc5f3a0b5882",
+			"id": "0802e428-bcdc-4168-af0b-1ebcba6e9757",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "072bc758-65fa-41ea-92e3-5437a70ae8f3",
+			"id": "f8fb8fd3-19f8-443d-8f3d-2b5bf6c6332c",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "08151a04-ea71-4f0a-a7f9-2ad0a151eee7",
+			"id": "905027d9-4c0a-451e-90d6-14ee59d9c365",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
