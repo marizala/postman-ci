@@ -38,8 +38,8 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									"console.log(utils.funcB());\r",
-									"console.log(utils.funcA());"
+									"console.log(action.funcB());\r",
+									"console.log(action.funcA());"
 								],
 								"type": "text/javascript"
 							}
@@ -466,11 +466,11 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "2f4f528b-f5f0-4be7-9205-86b085857cb9",
+						"id": "6dfca564-b2bd-4f5a-9037-483022f968b5",
 						"type": "text/javascript",
 						"exec": [
 							"// Reusable functions",
-							"utils = {",
+							"action = {",
 							"    funcA: function act() {",
 							"        return \"A\";",
 							"    },",
@@ -509,7 +509,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b2e7afcf-87b1-4e05-9e4b-a4ce5171b10d",
+						"id": "6aacc878-6eeb-4c13-b03f-dfcc42baccca",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -543,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "f3baa7d0-c761-4bc3-a57e-f6d011179717",
+			"id": "09d2a856-5c4f-4c8b-9076-7ff7cdcdf0c0",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "ce26ca6e-4026-4a9b-a934-0097b018d8c4",
+			"id": "ff9347a0-cba2-4251-a172-df19060fa856",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "d1717c6d-459b-49a4-a0e1-9ae802046166",
+			"id": "96598c7c-5d15-43c4-bab9-15082c1cd617",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "3331d836-6b1a-423c-a1f4-6a586befa13f",
+			"id": "08fced42-bdf6-427d-acda-a085e6b9e881",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
