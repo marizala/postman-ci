@@ -466,9 +466,21 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "7e1310d7-6a1c-43e5-87a1-7fd7b20cb0ea",
+						"id": "3f574fa7-c5ef-4733-acef-e855ff1bb930",
 						"type": "text/javascript",
 						"exec": [
+							"// Reusable functions",
+							"utils = {",
+							"    funcA: function act() {",
+							"        return \"A\";",
+							"    },",
+							"",
+							"    funcB: function act() {",
+							"        return \"B\";",
+							"    }",
+							"}",
+							"",
+							"",
 							"// SCHEMA",
 							"const schema_activities = {",
 							"\t\"type\": \"array\",",
@@ -490,23 +502,14 @@
 							"};",
 							"pm.collectionVariables.set(\"schema_activities\", schema_activities);",
 							"",
-							"// Reusable functions",
-							"utils = {",
-							"    funcA: function act() {",
-							"        return \"A\";",
-							"    },",
-							"",
-							"    funcB: function act() {",
-							"        return \"B\";",
-							"    }",
-							"}"
+							""
 						]
 					}
 				},
 				{
 					"listen": "test",
 					"script": {
-						"id": "25c41e65-9f01-4af0-95f7-98f10ed5f80b",
+						"id": "ab71def6-56c9-4b85-ace3-35f614cbce7d",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -540,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "c426e75a-0ac9-4208-a8a3-64348038481e",
+			"id": "e17982ec-c991-4d4b-9e07-0a8027dc58c2",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "c1216e59-9844-43bc-b06c-a4e751aa6401",
+			"id": "bdc31090-111d-4dbb-a4d1-0643c829e7ab",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "9f31f412-dee0-4b2d-bd83-a7fca2399c24",
+			"id": "b23f3f1a-4b05-4cb3-9703-1941e7d420d7",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "a3c5e31f-0797-4ab3-b0cb-71c0cdd03893",
+			"id": "7bf0f1bc-54b4-47a5-af0e-90bfe8516845",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
