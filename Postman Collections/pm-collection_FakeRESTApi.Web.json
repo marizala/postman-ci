@@ -466,11 +466,11 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "3f574fa7-c5ef-4733-acef-e855ff1bb930",
+						"id": "9d5526b2-2914-4c92-9f6c-ea48b925e872",
 						"type": "text/javascript",
 						"exec": [
 							"// Reusable functions",
-							"utils = {",
+							"const utils = {",
 							"    funcA: function act() {",
 							"        return \"A\";",
 							"    },",
@@ -509,7 +509,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ab71def6-56c9-4b85-ace3-35f614cbce7d",
+						"id": "c928cc9b-1e23-4354-b569-6dcf0f741951",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -543,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "31923ac1-12b2-419e-a1ad-49c5da12783a",
+			"id": "6fce8983-205f-4a97-9407-ae0a52ff25ac",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "f0c98a7e-1f25-45aa-81ba-243513515d1c",
+			"id": "da3c47e6-2bfd-4c7a-a49f-1b76ef144e4c",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "8e255f38-e5db-4b93-b20e-43c2ed158484",
+			"id": "9fe569f6-dc22-4bca-bbeb-181888022be7",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "9e735075-cab7-482f-9ec7-3e06b06b7fd5",
+			"id": "d4532723-9113-4edb-a97a-193ef1dc7a1b",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
