@@ -38,8 +38,8 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									"console.log(action.funcB());\r",
-									"console.log(action.funcA());"
+									"console.log(utils.funcB());\r",
+									"console.log(utils.funcA());"
 								],
 								"type": "text/javascript"
 							}
@@ -543,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "e7d8e84b-fdb1-431c-ab08-0e912807a614",
+			"id": "ca662eeb-2a49-46b9-9d32-a95bf711b9b7",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "52c49c2e-f825-4183-ba0b-0a74fc003e03",
+			"id": "358e5912-6e4c-401b-af62-55d87f7f4d32",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "a273fbbd-7ba4-4484-b5bb-ce8868fe9e38",
+			"id": "348450e3-f3b5-45d5-a32d-acd44622fcd9",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "77a86a5a-5f36-4d3c-8a86-eb163fbe6a3a",
+			"id": "84330194-f3e0-474d-aaaf-0d85145c2f38",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
