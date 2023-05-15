@@ -38,9 +38,6 @@
 							"script": {
 								"id": "c68b4099-6503-438b-a29b-0e027ceb278a",
 								"exec": [
-									"\r",
-									"utils = \"test\";\r",
-									"console.log(utils);\r",
 									"console.log(utils.funcB());\r",
 									"console.log(utils.funcA());"
 								],
@@ -546,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "8e08cfd6-f184-42e9-91b6-ff32062d1a7d",
+			"id": "39fa73f9-5452-4962-bc76-cc317e69db80",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "4cb29676-8301-4643-b078-c65c5a051f19",
+			"id": "4d36ffb7-4c2b-4d81-bfea-465b34a3ca9c",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "9ef0f827-415a-4104-9d5e-7a39290d8438",
+			"id": "a37dd42d-7118-4721-941c-52d4f1dd6b22",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "bea1a441-f3d0-4552-8723-3a8efe6222fa",
+			"id": "89497fc5-0c5b-4773-8520-cf3bcd02d14e",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
