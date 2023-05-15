@@ -466,7 +466,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9d5526b2-2914-4c92-9f6c-ea48b925e872",
+						"id": "7e5f9fbd-c6c3-4ad7-9caf-faa82724b785",
 						"type": "text/javascript",
 						"exec": [
 							"// Reusable functions",
@@ -478,7 +478,7 @@
 							"    funcB: function act() {",
 							"        return \"B\";",
 							"    }",
-							"}",
+							"};",
 							"",
 							"",
 							"// SCHEMA",
@@ -509,7 +509,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c928cc9b-1e23-4354-b569-6dcf0f741951",
+						"id": "2e3109e7-438c-4be4-bcab-1dea014b1728",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -543,23 +543,23 @@
 	],
 	"variable": [
 		{
-			"id": "4005017c-df8a-4213-aa18-96d94015b2d4",
+			"id": "384f7a79-8536-4b7c-abe4-de8a53a379ee",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "c5be3f2e-364c-42cb-956d-fbeec297db73",
+			"id": "6a88929d-a0d2-4886-a3b0-9d02078c773d",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "e3a38517-1b82-464c-b4b6-fc20d982b160",
+			"id": "883141a9-1b39-483e-9392-55f8733542b7",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "62994ed7-a2f6-4282-b4a5-6afaafdcd6ed",
+			"id": "b7dd2a83-e2e6-47b9-b0aa-1f9f08fa42c0",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
