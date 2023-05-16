@@ -343,7 +343,7 @@
 								"id": "5ee0210a-c547-4f61-8535-8577fc380ed7",
 								"exec": [
 									"pm.collectionVariables.set(\"activity_id\", _.random(1, 30));\r",
-									"pm.environment.set(\"message\", \"hello\");"
+									"pm.environment.set(\"message\", \"\");"
 								],
 								"type": "text/javascript"
 							}
@@ -560,23 +560,23 @@
 	],
 	"variable": [
 		{
-			"id": "94b7bf00-7703-44b6-b74c-b70b03930671",
+			"id": "566933bb-07bd-4c99-8dca-9deb7317b397",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "32038339-2a18-4a73-8bea-ccc530632729",
+			"id": "e0ea214b-1d5b-48f0-9a7d-c0db8faade4d",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "5033d5b0-7c47-4e7c-8e34-c60972575096",
+			"id": "a9804ae9-37bf-4b96-ac21-793a97a60dfe",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "9ba40c8b-5d5f-4766-89e9-7ed8c171d403",
+			"id": "194463ac-3b75-4be4-9f96-d786cad58d4e",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
