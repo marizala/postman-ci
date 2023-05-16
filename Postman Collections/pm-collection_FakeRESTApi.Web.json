@@ -409,6 +409,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "069f46f1-4d84-4ab0-9a1e-9d961aa7882e",
+								"exec": [
+									"pm.environment.get(\"message\");"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"id": "58cd7706-1959-4980-bf71-2f5d287efb35",
@@ -543,23 +553,23 @@
 	],
 	"variable": [
 		{
-			"id": "f0a9e0fb-e5a6-4b74-81a4-fd01e1077e03",
+			"id": "6983724b-1055-443e-bd09-ca94a55298c1",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "9507474a-25ee-48fb-aa31-b0baaa7ca4ac",
+			"id": "d813bc50-09b7-4f73-9456-8e1191f2de57",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "6669c404-d51b-48a3-ae1f-c4d875d3f920",
+			"id": "8ca212ef-7635-4a01-8f8e-3d3bb75a8707",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "0b44fd4b-5a35-41ad-a5bd-fc047f726272",
+			"id": "7cccfe21-aefc-4af0-8a8f-ccf79da92b2c",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
