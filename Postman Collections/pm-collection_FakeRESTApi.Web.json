@@ -340,7 +340,8 @@
 							"script": {
 								"id": "5ee0210a-c547-4f61-8535-8577fc380ed7",
 								"exec": [
-									"pm.collectionVariables.set(\"activity_id\", _.random(1, 30));"
+									"pm.collectionVariables.set(\"activity_id\", _.random(1, 30));\r",
+									"pm.environment.get(\"message\");"
 								],
 								"type": "text/javascript"
 							}
@@ -553,23 +554,23 @@
 	],
 	"variable": [
 		{
-			"id": "813e92f8-a4b2-4101-bbdc-49e61072749d",
+			"id": "bb0c976d-d775-436a-aae0-390a5970c9d6",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "ae7852ce-f0d8-4c0d-bb67-21ad71573caa",
+			"id": "98e654bf-e2e1-4a6a-b456-2f377de361ef",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "ac441db2-bc65-42c5-b4ec-332f7b4fcac5",
+			"id": "5bd7d843-e3e2-41a7-8a4f-e81f57548ed9",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "c8ff3afe-2ec7-44d3-b6ea-9cce6b9a660c",
+			"id": "58a13e6b-3a59-4df4-a9c0-399395debc27",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
