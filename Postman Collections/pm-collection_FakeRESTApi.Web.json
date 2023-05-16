@@ -479,7 +479,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "ed48d14d-f6da-4119-b5b4-d449b6fcdd70",
+						"id": "630d268f-ee3a-4ba2-b95c-958b86569c5f",
 						"type": "text/javascript",
 						"exec": [
 							"// Reusable functions",
@@ -493,6 +493,7 @@
 							"    },",
 							"",
 							"    setMessage: function setMessage() {",
+							"        console.log(\"QA\")",
 							"        pm.environment.set(\"message\", \"test\");",
 							"    }",
 							"};",
@@ -526,7 +527,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "589be0bc-9ef0-47d2-bb68-69dc0ea3c4da",
+						"id": "7330a5e0-c417-448b-b75c-51b575d266b6",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -560,23 +561,23 @@
 	],
 	"variable": [
 		{
-			"id": "0e305b62-5e85-4a01-9e43-98f829d02daf",
+			"id": "05295699-bbb4-4645-9fdb-927e0d135ee2",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "60f85d01-b4ef-48ef-945f-3c9cdee05592",
+			"id": "4452b645-5449-401d-be50-8f501de75add",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "ff18d65a-cfa8-466a-90f1-fe4b2851d976",
+			"id": "9454f41a-f82e-4821-8ce1-45538ae181da",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "c780a48b-f635-46c7-ac57-125700ee3c17",
+			"id": "1715ee4d-7495-4eb1-801a-77b06705b836",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
