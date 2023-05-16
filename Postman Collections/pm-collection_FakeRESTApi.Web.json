@@ -330,7 +330,9 @@
 									"    pm.expect(jsonData.title,\"\\\"title\\\"\").to.eql(title);\r",
 									"    pm.expect(jsonData.dueDate).not.be.empty;\r",
 									"    pm.expect(jsonData.completed,\"\\\"completed\\\"\").to.be.a(\"boolean\");\r",
-									"});"
+									"});\r",
+									"\r",
+									"utils.setMessage();"
 								],
 								"type": "text/javascript"
 							}
@@ -558,23 +560,23 @@
 	],
 	"variable": [
 		{
-			"id": "a0f40cd6-557f-42a1-bcb3-42e496291971",
+			"id": "66e003e1-2ede-464f-9b68-1617510c6557",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "c8e4c115-d35b-42bb-a1ff-71a405bd800e",
+			"id": "abb01ed3-574d-429e-b781-de9f1c9e0de7",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "40ec64b8-977a-48f4-8c12-878d2577a17d",
+			"id": "53e85a1c-b0c3-4c47-b623-73ec15c3df34",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "1148e447-663f-40e6-8e14-f280b07b8246",
+			"id": "a024d7eb-b183-41de-826f-5377b02f2601",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
