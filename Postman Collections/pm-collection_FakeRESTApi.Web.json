@@ -479,26 +479,9 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "113b3a4f-730e-41ad-aa16-c173d01afa79",
+						"id": "307f9cb8-832a-44b3-99fe-0f879f382681",
 						"type": "text/javascript",
 						"exec": [
-							"// Reusable functions",
-							"var utils = {",
-							"    funcA: function act() {",
-							"        return \"A\";",
-							"    },",
-							"",
-							"    funcB: function act() {",
-							"        return \"B\";",
-							"    },",
-							"",
-							"    setMessage: function setMessage() {",
-							"        console.log(\"QA\")",
-							"        pm.environment.set(\"message\", \"test\");",
-							"    }",
-							"};",
-							"",
-							"",
 							"// SCHEMA",
 							"const schema_activities = {",
 							"\t\"type\": \"array\",",
@@ -527,7 +510,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b2eed37d-5f86-49b0-be3d-6a2bf3127bf8",
+						"id": "fb0ae86d-b158-494d-b0ac-d1ac7bc9df92",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -561,23 +544,23 @@
 	],
 	"variable": [
 		{
-			"id": "1662a1e0-8c80-455b-8802-f54b194874b8",
+			"id": "d1d37997-584d-4b44-b49a-b0149c12b731",
 			"key": "schema_activities",
 			"value": ""
 		},
 		{
-			"id": "94896bd3-fd2c-4a4a-95ad-779a61e385da",
+			"id": "aa070c7a-c534-4e44-8123-2c008580b4c0",
 			"key": "date_time",
 			"value": ""
 		},
 		{
-			"id": "0b847bb9-c520-4a2a-912b-ea1f16f0f429",
+			"id": "787ac9c9-93ea-4d49-b8e0-06d446933860",
 			"key": "activity_ctr",
 			"value": "30",
 			"type": "string"
 		},
 		{
-			"id": "21c0f60f-9168-4892-92bb-7975c68c76d2",
+			"id": "62adb43f-a6f6-4b16-864b-c33480d21170",
 			"key": "activity_id",
 			"value": "",
 			"type": "string"
